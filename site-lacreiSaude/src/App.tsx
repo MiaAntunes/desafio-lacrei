@@ -1,3 +1,4 @@
+import { GlobalStyle } from "./GlobalStyled"
 import { Router } from "./router/Router"
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
 
   return (
     <>
+      <GlobalStyle/>
       <Router/>
     </>
   )
