@@ -4,11 +4,11 @@ O objetivo deste projeto é criar um site para uma vaga de voluntariado, demonst
 
 ## Layout do Site
 
-![Preview da Primeira Página](../desafio-lacrei/site-lacreiSaude/src/assets/pag1.png)
+![Preview da Primeira Página](../desafio-lacrei/site-lacreiSaude/public/pag1.png)
 
-![Preview da Segunda Página](../desafio-lacrei/site-lacreiSaude/src/assets/pag2.png)
+![Preview da Segunda Página](../desafio-lacrei/site-lacreiSaude/public/pag2.png)
 
-![Preview da Terceira Página](../desafio-lacrei/site-lacreiSaude/src/assets/pag3.png)
+![Preview da Terceira Página](../desafio-lacrei/site-lacreiSaude/public/pag3.png)
 
 [Preview do Site](https://www.figma.com/file/CItS5uEtcS33N4BNMxVdzS/Desafio?node-id=0%3A1&mode=dev)
 
