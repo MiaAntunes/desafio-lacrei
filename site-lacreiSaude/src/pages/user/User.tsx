@@ -9,12 +9,12 @@ export const User = () =>{
     <>
       <Header/>
       <main>
-      <Description
-      title="Pessoa Usuária"
-      paragraph="A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado por profissionais de qualidade e que atendam às suas necessidades de forma segura e acolhedora."
-      buttonOne
-      buttonTwo
-      imgMain={imgUser} />
+        <Description
+         title="Pessoa Usuária"
+         paragraph="A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado por profissionais de qualidade e que atendam às suas necessidades de forma segura e acolhedora."
+         buttonOne
+         buttonTwo
+         imgMain={imgUser} />
       <Footer/>
       </main>
     </>

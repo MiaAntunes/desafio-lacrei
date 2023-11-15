@@ -5,60 +5,62 @@ import { goToProfessionalPage } from "../../router/Coordenator"
 import FacebookLogo from "../../assets/FacebookLogo.svg"
 import InstagramLogo from "../../assets/InstagramLogo.svg"
 import LinkedinLogo from "../../assets/LinkedinLogo.svg"
+import { ArticleMidiasSociais, ArticleNav, FooterGlobal, ImgMidiasSociais, LinkNavFooter, ListNavFooter, Paragraph } from "./footerStyled"
 
 export const Footer = () =>{
   const navigate = useNavigate()
 
   return(
-    <footer>
-      <article>
+    <FooterGlobal>
+      <ArticleNav>
         <nav>
-        <ul>
+          <ListNavFooter>
           {
+
             location.pathname === "/" ?
             <li>
-               <a style={{fontWeight:"bold"}} onClick={()=>goToHomePage(navigate)}>Home</a>
+               <LinkNavFooter style={{fontWeight:"bold"}} onClick={()=>goToHomePage(navigate)}>Home</LinkNavFooter>
             </li>
             :
             <li>
-               <a  onClick={()=>goToHomePage(navigate)}>Home</a>
+               <LinkNavFooter  onClick={()=>goToHomePage(navigate)}>Home</LinkNavFooter>
             </li>
           }
           {
             location.pathname.includes("user") ?
           <li>
-            <a style={{fontWeight:"bold"}} onClick={()=>goToUserPage(navigate)} >Pessoa usuária</a>
+            <LinkNavFooter style={{fontWeight:"bold"}} onClick={()=>goToUserPage(navigate)} >Pessoa usuária</LinkNavFooter>
           </li>
           :
           <li>
-            <a onClick={()=>goToUserPage(navigate)} >Pessoa usuária</a>
+            <LinkNavFooter onClick={()=>goToUserPage(navigate)} >Pessoa usuária</LinkNavFooter>
           </li>
           }
           {
              location.pathname.includes("professional") ?
               <li>
-                 <a style={{fontWeight:"bold"}} onClick={()=>goToProfessionalPage(navigate)}>Profissional</a>
+                 <LinkNavFooter style={{fontWeight:"bold"}} onClick={()=>goToProfessionalPage(navigate)}>Profissional</LinkNavFooter>
               </li>
               :
               <li>
-                 <a onClick={()=>goToProfessionalPage(navigate)}>Profissional</a>
+                 <LinkNavFooter onClick={()=>goToProfessionalPage(navigate)}>Profissional</LinkNavFooter>
               </li>
           }
-        </ul>
+        </ListNavFooter>
         </nav>
-      </article>
-      <article>
+      </ArticleNav>
+      <ArticleMidiasSociais>
         <a href="https://www.facebook.com/lacrei.saude/">
-          <img src={FacebookLogo} alt="Link para Facebook" />
+          <ImgMidiasSociais src={FacebookLogo} alt="Link para Facebook" />
         </a>
         <a href="https://www.instagram.com/lacrei.saude/">
-          <img src={InstagramLogo} alt="Link para Instagram" />
+          <ImgMidiasSociais src={InstagramLogo} alt="Link para Instagram" />
         </a>
         <a href="https://www.linkedin.com/company/lacrei-saude/">
-          <img src={LinkedinLogo} alt="Link para Linkedin" />
+          <ImgMidiasSociais src={LinkedinLogo} alt="Link para Linkedin" />
         </a>
-      </article>
-      <p>Desafio Front-end Lacrei feito por Camila Antunes</p>
-    </footer>
+      </ArticleMidiasSociais>
+      <Paragraph>Desafio Front-end Lacrei feito por Camila Antunes</Paragraph>
+    </FooterGlobal>
   )
 }

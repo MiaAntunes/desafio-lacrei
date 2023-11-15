@@ -2,26 +2,27 @@ import { useNavigate } from "react-router"
 import { goToUserPage } from "../../router/Coordenator"
 import { goToHomePage } from "../../router/Coordenator"
 import { goToProfessionalPage } from "../../router/Coordenator"
+import { HeaderGlobal, LinkNav, ListNav, TitleHeader } from "./headerStyled"
 
 export const Header = () =>{
   const navigate = useNavigate()
 
   return(
-    <header>
-      <h1>Lacrei</h1>
+    <HeaderGlobal>
+      <TitleHeader>Lacrei</TitleHeader>
       <nav>
-        <ul>
+        <ListNav>
           <li>
-            <button onClick={()=>goToHomePage(navigate)}>Home</button>
+            <LinkNav onClick={()=>goToHomePage(navigate)}>Home</LinkNav>
           </li>
           <li>
-            <button onClick={()=>goToProfessionalPage(navigate)}>Pessoa Usuária</button>
+            <LinkNav onClick={()=>goToUserPage(navigate)}>Pessoa Usuária</LinkNav>
           </li>
           <li>
-            <button onClick={()=>goToUserPage(navigate)} >Profissional</button>
+            <LinkNav onClick={()=>goToProfessionalPage(navigate)} >Profissional</LinkNav>
           </li>
-        </ul>
+        </ListNav>
       </nav>
-    </header>
+    </HeaderGlobal>
   )
 }

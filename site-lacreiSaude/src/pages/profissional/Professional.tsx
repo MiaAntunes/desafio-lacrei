@@ -9,12 +9,12 @@ export const Professional = () =>{
     <>
       <Header/>
       <main>
-      <Description
-      title="Profissional"
-      paragraph="A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado por profissionais de qualidade e que atendam às suas necessidades de forma segura e acolhedora."
-      buttonOne
-      buttonTwo
-      imgMain={imgProfessional} />
+         <Description
+          title="Profissional"
+          paragraph="A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado por profissionais de qualidade e que atendam às suas necessidades de forma segura e acolhedora."
+          buttonOne
+          buttonTwo
+          imgMain={imgProfessional} />
       <Footer/>
       </main>
     </>
