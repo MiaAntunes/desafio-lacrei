@@ -1,11 +1,11 @@
-export const goToHomePage = (navigate) => {
+export const goToHomePage = (navigate : any) => {
     return navigate(`/`)
 }
 
-export const goToProfessionalPage= (navigate) => {
+export const goToProfessionalPage= (navigate : any) => {
     return navigate('/professional')
 }
 
-export const goToUserPage = (navigate) => {
+export const goToUserPage = (navigate : any) => {
     return navigate('/user')
 }
