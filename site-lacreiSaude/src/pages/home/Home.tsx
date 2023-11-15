@@ -11,11 +11,11 @@ export const Home = () =>{
       <Header/>
       <main>
         <Description
-      title="Boas vindas a Lacrei Saúde"
-      paragraph="Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+"
-      buttonOne="Pessoa Usuária"
-      buttonTwo="Profissional"
-      imgMain={imgHome}
+         title="Boas vindas a Lacrei Saúde"
+         paragraph="Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+"
+         buttonOne="Pessoa Usuária"
+         buttonTwo="Profissional"
+         imgMain={imgHome}
        />
       <Footer/>
       </main>
